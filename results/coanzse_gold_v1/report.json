@@ -1,0 +1,624 @@
+{
+  "created_at_utc": "2026-08-03T10:27:20.787898+00:00",
+  "detailed": {
+    "base_large_v3::standard": {
+      "all_100": {
+        "adjacent_repetitions": {
+          "f1": 0.24,
+          "hypothesis": 10,
+          "precision": 0.9,
+          "recall": 0.13846153846153847,
+          "reference": 65,
+          "true_positive": 9
+        },
+        "cer": {
+          "deletions": 2007,
+          "error_rate": 0.1336294818911201,
+          "insertions": 375,
+          "reference_units": 22061,
+          "substitutions": 566
+        },
+        "cer_excluded_unclear_examples": 7,
+        "disfluency_stripped_wer": {
+          "deletions": 372,
+          "error_rate": 0.15057771151695862,
+          "insertions": 118,
+          "reference_units": 5366,
+          "substitutions": 318
+        },
+        "examples": 100,
+        "examples_with_unclear": 7,
+        "fillers": {
+          "f1": 0.09448818897637795,
+          "hypothesis": 12,
+          "precision": 1.0,
+          "recall": 0.049586776859504134,
+          "reference": 242,
+          "true_positive": 12
+        },
+        "fragments": {
+          "f1": 0.0,
+          "hypothesis": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "reference": 28,
+          "true_positive": 0
+        },
+        "hours": 0.5555555555555556,
+        "small_reduced_forms": {
+          "f1": 0.25,
+          "hypothesis": 1,
+          "precision": 1.0,
+          "recall": 0.14285714285714285,
+          "reference": 7,
+          "true_positive": 1
+        },
+        "unclear_reference_units_masked": 12,
+        "verbatim_wer": {
+          "deletions": 646,
+          "error_rate": 0.19546994827893704,
+          "insertions": 92,
+          "reference_units": 5607,
+          "substitutions": 358
+        }
+      },
+      "analysis_57": {
+        "adjacent_repetitions": {
+          "f1": 0.375,
+          "hypothesis": 7,
+          "precision": 0.8571428571428571,
+          "recall": 0.24,
+          "reference": 25,
+          "true_positive": 6
+        },
+        "cer": {
+          "deletions": 914,
+          "error_rate": 0.10949016032216397,
+          "insertions": 210,
+          "reference_units": 13161,
+          "substitutions": 317
+        },
+        "cer_excluded_unclear_examples": 1,
+        "disfluency_stripped_wer": {
+          "deletions": 163,
+          "error_rate": 0.1211038961038961,
+          "insertions": 53,
+          "reference_units": 3080,
+          "substitutions": 157
+        },
+        "examples": 57,
+        "examples_with_unclear": 1,
+        "fillers": {
+          "f1": 0.1167883211678832,
+          "hypothesis": 8,
+          "precision": 1.0,
+          "recall": 0.06201550387596899,
+          "reference": 129,
+          "true_positive": 8
+        },
+        "fragments": {
+          "f1": 0.0,
+          "hypothesis": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "reference": 6,
+          "true_positive": 0
+        },
+        "hours": 0.31666666666666665,
+        "small_reduced_forms": {
+          "f1": 0.33333333333333337,
+          "hypothesis": 1,
+          "precision": 1.0,
+          "recall": 0.2,
+          "reference": 5,
+          "true_positive": 1
+        },
+        "unclear_reference_units_masked": 1,
+        "verbatim_wer": {
+          "deletions": 292,
+          "error_rate": 0.1606022584692597,
+          "insertions": 47,
+          "reference_units": 3188,
+          "substitutions": 173
+        }
+      }
+    },
+    "crisperwhisper2_large::crisper_verbatim": {
+      "all_100": {
+        "adjacent_repetitions": {
+          "f1": 0.7659574468085107,
+          "hypothesis": 76,
+          "precision": 0.7105263157894737,
+          "recall": 0.8307692307692308,
+          "reference": 65,
+          "true_positive": 54
+        },
+        "cer": {
+          "deletions": 1489,
+          "error_rate": 0.11495399120620099,
+          "insertions": 548,
+          "reference_units": 22061,
+          "substitutions": 499
+        },
+        "cer_excluded_unclear_examples": 7,
+        "disfluency_stripped_wer": {
+          "deletions": 423,
+          "error_rate": 0.1563548266865449,
+          "insertions": 138,
+          "reference_units": 5366,
+          "substitutions": 278
+        },
+        "examples": 100,
+        "examples_with_unclear": 7,
+        "fillers": {
+          "f1": 0.8577319587628867,
+          "hypothesis": 243,
+          "precision": 0.8559670781893004,
+          "recall": 0.859504132231405,
+          "reference": 242,
+          "true_positive": 208
+        },
+        "fragments": {
+          "f1": 0.14285714285714285,
+          "hypothesis": 28,
+          "precision": 0.14285714285714285,
+          "recall": 0.14285714285714285,
+          "reference": 28,
+          "true_positive": 4
+        },
+        "hours": 0.5555555555555556,
+        "small_reduced_forms": {
+          "f1": 0.7142857142857143,
+          "hypothesis": 7,
+          "precision": 0.7142857142857143,
+          "recall": 0.7142857142857143,
+          "reference": 7,
+          "true_positive": 5
+        },
+        "unclear_reference_units_masked": 12,
+        "verbatim_wer": {
+          "deletions": 410,
+          "error_rate": 0.16247547708221866,
+          "insertions": 149,
+          "reference_units": 5607,
+          "substitutions": 352
+        }
+      },
+      "analysis_57": {
+        "adjacent_repetitions": {
+          "f1": 0.7241379310344828,
+          "hypothesis": 33,
+          "precision": 0.6363636363636364,
+          "recall": 0.84,
+          "reference": 25,
+          "true_positive": 21
+        },
+        "cer": {
+          "deletions": 693,
+          "error_rate": 0.09695311906390092,
+          "insertions": 320,
+          "reference_units": 13161,
+          "substitutions": 263
+        },
+        "cer_excluded_unclear_examples": 1,
+        "disfluency_stripped_wer": {
+          "deletions": 182,
+          "error_rate": 0.12435064935064935,
+          "insertions": 60,
+          "reference_units": 3080,
+          "substitutions": 141
+        },
+        "examples": 57,
+        "examples_with_unclear": 1,
+        "fillers": {
+          "f1": 0.8593155893536122,
+          "hypothesis": 134,
+          "precision": 0.8432835820895522,
+          "recall": 0.875968992248062,
+          "reference": 129,
+          "true_positive": 113
+        },
+        "fragments": {
+          "f1": 0.18181818181818182,
+          "hypothesis": 16,
+          "precision": 0.125,
+          "recall": 0.3333333333333333,
+          "reference": 6,
+          "true_positive": 2
+        },
+        "hours": 0.31666666666666665,
+        "small_reduced_forms": {
+          "f1": 0.888888888888889,
+          "hypothesis": 4,
+          "precision": 1.0,
+          "recall": 0.8,
+          "reference": 5,
+          "true_positive": 4
+        },
+        "unclear_reference_units_masked": 1,
+        "verbatim_wer": {
+          "deletions": 168,
+          "error_rate": 0.13111668757841907,
+          "insertions": 76,
+          "reference_units": 3188,
+          "substitutions": 174
+        }
+      }
+    },
+    "dual_policy_large_v3_lora::ovw_verbatim": {
+      "all_100": {
+        "adjacent_repetitions": {
+          "f1": 0.8148148148148148,
+          "hypothesis": 70,
+          "precision": 0.7857142857142857,
+          "recall": 0.8461538461538461,
+          "reference": 65,
+          "true_positive": 55
+        },
+        "cer": {
+          "deletions": 497,
+          "error_rate": 0.08453832555187889,
+          "insertions": 788,
+          "reference_units": 22061,
+          "substitutions": 580
+        },
+        "cer_excluded_unclear_examples": 7,
+        "disfluency_stripped_wer": {
+          "deletions": 107,
+          "error_rate": 0.13045098770033545,
+          "insertions": 231,
+          "reference_units": 5366,
+          "substitutions": 362
+        },
+        "examples": 100,
+        "examples_with_unclear": 7,
+        "fillers": {
+          "f1": 0.8101265822784811,
+          "hypothesis": 232,
+          "precision": 0.8275862068965517,
+          "recall": 0.7933884297520661,
+          "reference": 242,
+          "true_positive": 192
+        },
+        "fragments": {
+          "f1": 0.22727272727272727,
+          "hypothesis": 16,
+          "precision": 0.3125,
+          "recall": 0.17857142857142858,
+          "reference": 28,
+          "true_positive": 5
+        },
+        "hours": 0.5555555555555556,
+        "small_reduced_forms": {
+          "f1": 0.6666666666666666,
+          "hypothesis": 8,
+          "precision": 0.625,
+          "recall": 0.7142857142857143,
+          "reference": 7,
+          "true_positive": 5
+        },
+        "unclear_reference_units_masked": 12,
+        "verbatim_wer": {
+          "deletions": 127,
+          "error_rate": 0.14071696094168004,
+          "insertions": 234,
+          "reference_units": 5607,
+          "substitutions": 428
+        }
+      },
+      "analysis_57": {
+        "adjacent_repetitions": {
+          "f1": 0.8,
+          "hypothesis": 30,
+          "precision": 0.7333333333333333,
+          "recall": 0.88,
+          "reference": 25,
+          "true_positive": 22
+        },
+        "cer": {
+          "deletions": 279,
+          "error_rate": 0.07879340475647748,
+          "insertions": 454,
+          "reference_units": 13161,
+          "substitutions": 304
+        },
+        "cer_excluded_unclear_examples": 1,
+        "disfluency_stripped_wer": {
+          "deletions": 56,
+          "error_rate": 0.11071428571428571,
+          "insertions": 103,
+          "reference_units": 3080,
+          "substitutions": 182
+        },
+        "examples": 57,
+        "examples_with_unclear": 1,
+        "fillers": {
+          "f1": 0.842911877394636,
+          "hypothesis": 132,
+          "precision": 0.8333333333333334,
+          "recall": 0.8527131782945736,
+          "reference": 129,
+          "true_positive": 110
+        },
+        "fragments": {
+          "f1": 0.26666666666666666,
+          "hypothesis": 9,
+          "precision": 0.2222222222222222,
+          "recall": 0.3333333333333333,
+          "reference": 6,
+          "true_positive": 2
+        },
+        "hours": 0.31666666666666665,
+        "small_reduced_forms": {
+          "f1": 0.8000000000000002,
+          "hypothesis": 5,
+          "precision": 0.8,
+          "recall": 0.8,
+          "reference": 5,
+          "true_positive": 4
+        },
+        "unclear_reference_units_masked": 1,
+        "verbatim_wer": {
+          "deletions": 59,
+          "error_rate": 0.12170639899623588,
+          "insertions": 122,
+          "reference_units": 3188,
+          "substitutions": 207
+        }
+      }
+    },
+    "verbatim_only_large_v3_full::standard": {
+      "all_100": {
+        "adjacent_repetitions": {
+          "f1": 0.7297297297297298,
+          "hypothesis": 83,
+          "precision": 0.6506024096385542,
+          "recall": 0.8307692307692308,
+          "reference": 65,
+          "true_positive": 54
+        },
+        "cer": {
+          "deletions": 535,
+          "error_rate": 0.08558088935225058,
+          "insertions": 765,
+          "reference_units": 22061,
+          "substitutions": 588
+        },
+        "cer_excluded_unclear_examples": 7,
+        "disfluency_stripped_wer": {
+          "deletions": 134,
+          "error_rate": 0.12430115542303392,
+          "insertions": 194,
+          "reference_units": 5366,
+          "substitutions": 339
+        },
+        "examples": 100,
+        "examples_with_unclear": 7,
+        "fillers": {
+          "f1": 0.7926829268292683,
+          "hypothesis": 250,
+          "precision": 0.78,
+          "recall": 0.8057851239669421,
+          "reference": 242,
+          "true_positive": 195
+        },
+        "fragments": {
+          "f1": 0.18181818181818182,
+          "hypothesis": 27,
+          "precision": 0.18518518518518517,
+          "recall": 0.17857142857142858,
+          "reference": 28,
+          "true_positive": 5
+        },
+        "hours": 0.5555555555555556,
+        "small_reduced_forms": {
+          "f1": 0.7142857142857143,
+          "hypothesis": 7,
+          "precision": 0.7142857142857143,
+          "recall": 0.7142857142857143,
+          "reference": 7,
+          "true_positive": 5
+        },
+        "unclear_reference_units_masked": 12,
+        "verbatim_wer": {
+          "deletions": 137,
+          "error_rate": 0.138398430533262,
+          "insertions": 224,
+          "reference_units": 5607,
+          "substitutions": 415
+        }
+      },
+      "analysis_57": {
+        "adjacent_repetitions": {
+          "f1": 0.7096774193548386,
+          "hypothesis": 37,
+          "precision": 0.5945945945945946,
+          "recall": 0.88,
+          "reference": 25,
+          "true_positive": 22
+        },
+        "cer": {
+          "deletions": 256,
+          "error_rate": 0.0722589468885343,
+          "insertions": 402,
+          "reference_units": 13161,
+          "substitutions": 293
+        },
+        "cer_excluded_unclear_examples": 1,
+        "disfluency_stripped_wer": {
+          "deletions": 66,
+          "error_rate": 0.10194805194805195,
+          "insertions": 90,
+          "reference_units": 3080,
+          "substitutions": 158
+        },
+        "examples": 57,
+        "examples_with_unclear": 1,
+        "fillers": {
+          "f1": 0.8191881918819188,
+          "hypothesis": 142,
+          "precision": 0.7816901408450704,
+          "recall": 0.8604651162790697,
+          "reference": 129,
+          "true_positive": 111
+        },
+        "fragments": {
+          "f1": 0.14285714285714288,
+          "hypothesis": 8,
+          "precision": 0.125,
+          "recall": 0.16666666666666666,
+          "reference": 6,
+          "true_positive": 1
+        },
+        "hours": 0.31666666666666665,
+        "small_reduced_forms": {
+          "f1": 0.888888888888889,
+          "hypothesis": 4,
+          "precision": 1.0,
+          "recall": 0.8,
+          "reference": 5,
+          "true_positive": 4
+        },
+        "unclear_reference_units_masked": 1,
+        "verbatim_wer": {
+          "deletions": 58,
+          "error_rate": 0.11386449184441656,
+          "insertions": 113,
+          "reference_units": 3188,
+          "substitutions": 192
+        }
+      }
+    }
+  },
+  "manifest": "results/coanzse_gold_v1/manifest.jsonl",
+  "normalization": "case and punctuation are ignored; a vendored comprehensive UK/Australian/US spelling-variant table, macron/diacritic variants, and written title forms are canonicalized; spoken initialism variants such as L T P/L.T.P./LTP are equivalent; leading straight/curly apostrophes in reduced forms such as 'em are ignored without merging the audible forms em/them in verbatim scoring; normalized scoring equates em/them and contracted 's with its is/has expansion; nasal backchannel and uh-huh spellings are canonicalized; bracketed non-speech events are excluded; [unclear] and [unclear N] reference words mask zero or one hypothesis word each; audible lexical distinctions, reduced forms, repetitions, and trailing fragments remain distinct in verbatim scoring",
+  "prediction_files": [
+    "results/predictions/base_large_v3.jsonl",
+    "restricted external baseline output omitted; aggregate only",
+    "results/predictions/dual_policy_large_v3_lora.jsonl",
+    "results/predictions/verbatim_only_large_v3_full.jsonl"
+  ],
+  "results": [
+    {
+      "examples": 100,
+      "filler_f1": 0.09448818897637795,
+      "filler_precision": 1.0,
+      "filler_recall": 0.049586776859504134,
+      "fragment_f1": 0.0,
+      "mode": "standard",
+      "normalized_wer_percent": 15.057771151695862,
+      "repetition_f1": 0.24,
+      "small_form_f1": 0.25,
+      "subset": "all_100",
+      "system": "base_large_v3",
+      "unclear_reference_units_masked": 12,
+      "verbatim_wer_percent": 19.546994827893705
+    },
+    {
+      "examples": 57,
+      "filler_f1": 0.1167883211678832,
+      "filler_precision": 1.0,
+      "filler_recall": 0.06201550387596899,
+      "fragment_f1": 0.0,
+      "mode": "standard",
+      "normalized_wer_percent": 12.11038961038961,
+      "repetition_f1": 0.375,
+      "small_form_f1": 0.33333333333333337,
+      "subset": "analysis_57",
+      "system": "base_large_v3",
+      "unclear_reference_units_masked": 1,
+      "verbatim_wer_percent": 16.06022584692597
+    },
+    {
+      "examples": 100,
+      "filler_f1": 0.8577319587628867,
+      "filler_precision": 0.8559670781893004,
+      "filler_recall": 0.859504132231405,
+      "fragment_f1": 0.14285714285714285,
+      "mode": "crisper_verbatim",
+      "normalized_wer_percent": 15.635482668654491,
+      "repetition_f1": 0.7659574468085107,
+      "small_form_f1": 0.7142857142857143,
+      "subset": "all_100",
+      "system": "crisperwhisper2_large",
+      "unclear_reference_units_masked": 12,
+      "verbatim_wer_percent": 16.247547708221866
+    },
+    {
+      "examples": 57,
+      "filler_f1": 0.8593155893536122,
+      "filler_precision": 0.8432835820895522,
+      "filler_recall": 0.875968992248062,
+      "fragment_f1": 0.18181818181818182,
+      "mode": "crisper_verbatim",
+      "normalized_wer_percent": 12.435064935064934,
+      "repetition_f1": 0.7241379310344828,
+      "small_form_f1": 0.888888888888889,
+      "subset": "analysis_57",
+      "system": "crisperwhisper2_large",
+      "unclear_reference_units_masked": 1,
+      "verbatim_wer_percent": 13.111668757841906
+    },
+    {
+      "examples": 100,
+      "filler_f1": 0.8101265822784811,
+      "filler_precision": 0.8275862068965517,
+      "filler_recall": 0.7933884297520661,
+      "fragment_f1": 0.22727272727272727,
+      "mode": "ovw_verbatim",
+      "normalized_wer_percent": 13.045098770033544,
+      "repetition_f1": 0.8148148148148148,
+      "small_form_f1": 0.6666666666666666,
+      "subset": "all_100",
+      "system": "dual_policy_large_v3_lora",
+      "unclear_reference_units_masked": 12,
+      "verbatim_wer_percent": 14.071696094168004
+    },
+    {
+      "examples": 57,
+      "filler_f1": 0.842911877394636,
+      "filler_precision": 0.8333333333333334,
+      "filler_recall": 0.8527131782945736,
+      "fragment_f1": 0.26666666666666666,
+      "mode": "ovw_verbatim",
+      "normalized_wer_percent": 11.071428571428571,
+      "repetition_f1": 0.8,
+      "small_form_f1": 0.8000000000000002,
+      "subset": "analysis_57",
+      "system": "dual_policy_large_v3_lora",
+      "unclear_reference_units_masked": 1,
+      "verbatim_wer_percent": 12.170639899623588
+    },
+    {
+      "examples": 100,
+      "filler_f1": 0.7926829268292683,
+      "filler_precision": 0.78,
+      "filler_recall": 0.8057851239669421,
+      "fragment_f1": 0.18181818181818182,
+      "mode": "standard",
+      "normalized_wer_percent": 12.430115542303392,
+      "repetition_f1": 0.7297297297297298,
+      "small_form_f1": 0.7142857142857143,
+      "subset": "all_100",
+      "system": "verbatim_only_large_v3_full",
+      "unclear_reference_units_masked": 12,
+      "verbatim_wer_percent": 13.8398430533262
+    },
+    {
+      "examples": 57,
+      "filler_f1": 0.8191881918819188,
+      "filler_precision": 0.7816901408450704,
+      "filler_recall": 0.8604651162790697,
+      "fragment_f1": 0.14285714285714288,
+      "mode": "standard",
+      "normalized_wer_percent": 10.194805194805195,
+      "repetition_f1": 0.7096774193548386,
+      "small_form_f1": 0.888888888888889,
+      "subset": "analysis_57",
+      "system": "verbatim_only_large_v3_full",
+      "unclear_reference_units_masked": 1,
+      "verbatim_wer_percent": 11.386449184441656
+    }
+  ],
+  "scoring_version": "context-gold-orthography-v6"
+}

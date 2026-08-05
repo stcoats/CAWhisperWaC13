@@ -1,0 +1,18 @@
+{
+  "base_model": "openai/whisper-large-v3",
+  "optimization": "full",
+  "training_policy": "verbatim",
+  "learning_rate": 1e-5,
+  "epochs": 10,
+  "batch_size_per_device": 2,
+  "evaluation_batch_size_per_device": 2,
+  "gradient_accumulation_steps": 2,
+  "world_size": 4,
+  "effective_batch_size": 16,
+  "warmup_ratio": 0.1,
+  "weight_decay": 0.01,
+  "early_stopping_patience": 3,
+  "checkpoint_metric": "unweighted corpus-macro verbatim WER",
+  "matched_audio_exposure_multiplier": 2,
+  "seed": 20260730
+}

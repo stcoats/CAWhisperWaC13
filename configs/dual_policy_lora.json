@@ -1,0 +1,22 @@
+{
+  "base_model": "openai/whisper-large-v3",
+  "optimization": "lora",
+  "training_policy": "dual",
+  "policy_tokens": ["<|ovw_verbatim|>", "<|ovw_intended|>"],
+  "learning_rate": 1e-4,
+  "epochs": 10,
+  "batch_size_per_device": 2,
+  "evaluation_batch_size_per_device": 2,
+  "gradient_accumulation_steps": 2,
+  "world_size": 4,
+  "effective_batch_size": 16,
+  "warmup_ratio": 0.1,
+  "weight_decay": 0.01,
+  "early_stopping_patience": 3,
+  "lora_rank": 32,
+  "lora_alpha": 64,
+  "lora_dropout": 0.05,
+  "target_modules": ["q_proj", "v_proj"],
+  "checkpoint_metric": "unweighted corpus-macro verbatim WER",
+  "seed": 20260730
+}
