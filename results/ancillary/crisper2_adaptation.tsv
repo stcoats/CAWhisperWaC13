@@ -1,0 +1,5 @@
+corpus	system	examples	vwer	intended_wer	filler_f1	repetition_f1	fragment_f1	small_form_f1
+latrobe	crisper2_base	77	0.2029	0.2441	0.757	0.612	0.000	0.727
+latrobe	crisper2_lora	77	0.1707	0.2059	0.599	0.654	0.000	0.571
+sbcsae	crisper2_base	133	0.1411	0.1516	0.494	0.653	0.289	0.684
+sbcsae	crisper2_lora	133	0.1065	0.1166	0.430	0.634	0.234	0.725

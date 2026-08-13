@@ -11,25 +11,47 @@ conversational speech. The principal systems are:
 - a dual-policy LoRA model controlled by `<|ovw_verbatim|>` and
   `<|ovw_intended|>` decoder-prefix tokens.
 
-The artifact contains the complete preparation, training, inference, scoring,
-and paper-analysis code. It also contains a sanitized manifest and frozen
-predictions for the openly implemented systems. It deliberately excludes
-source-corpus audio/transcripts, model checkpoints, credentials, cluster logs,
-private storage paths, and restricted CrisperWhisper outputs.
+The artifact contains the preparation, training, inference, scoring, and
+paper-analysis code for the main experiments. It also documents two ancillary
+experiments conducted during development: a three-source full fine-tune that
+adds GCSAusE, and a two-source LoRA adaptation of CrisperWhisper2. Sanitized
+manifests and frozen predictions are included where redistribution is
+permitted. The repository deliberately excludes source-corpus audio and
+transcripts, model checkpoints, credentials, cluster logs, private storage
+paths, and restricted CrisperWhisper outputs.
 
 ## Repository layout
 
-- `scripts/data/`: transcript preparation, exact-boundary manifest creation,
-  dual-policy target construction, and release sanitization.
-- `scripts/train/`: one trainer supporting LoRA or full fine-tuning and dual
-  or verbatim-only supervision.
+- `scripts/data/`: transcript preparation for La Trobe, SBCSAE, and GCSAusE;
+  exact-boundary manifest creation; dual-policy target construction; and
+  release sanitization.
+- `scripts/train/`: the main Whisper trainer plus the ancillary
+  CrisperWhisper2 LoRA trainer.
 - `scripts/evaluate/`: deterministic generation, loop protection, event
   metrics, and the clustered bootstrap analysis.
+- `scripts/figures/`: reproducible manuscript figures.
 - `scripts/scoring/`: the frozen orthographic and interactional scoring policy.
 - `slurm/`: portable four-GPU Slurm templates.
-- `results/`: frozen aggregate results, sanitized benchmark metadata, and
-  releasable prediction files.
-- `docs/`: corpus reconstruction, licensing, and reproducibility notes.
+- `results/`: frozen aggregate results, sanitized benchmark metadata,
+  releasable prediction files, and aggregate ancillary results.
+- `docs/`: corpus reconstruction, licensing, reproducibility, ancillary
+  experiments, and the manuscript workflow figure.
+
+## Ancillary experiments
+
+The main CoANZSE comparison remains the four-system experiment reported in
+`results/coanzse_gold_v1/`. Later development experiments are documented in
+`docs/ANCILLARY_EXPERIMENTS.md` and `results/ancillary/`.
+
+- **Three-source full fine-tune:** adds GCSAusE to La Trobe and SBCSAE and is
+  evaluated on held-out portions of all three source corpora.
+- **Adapted CrisperWhisper2:** applies a conventional q/v-projection LoRA to
+  CrisperWhisper2 using the two-source verbatim training set and evaluates it
+  on held-out La Trobe and SBCSAE speech.
+
+No three-source LoRA run was conducted. The adapted CrisperWhisper2 system was
+not evaluated on the final 100-clip CoANZSE gold benchmark, so neither
+ancillary experiment is part of the main target-domain table.
 
 ## Reproduce the released CoANZSE analysis
 

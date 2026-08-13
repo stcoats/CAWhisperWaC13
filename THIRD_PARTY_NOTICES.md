@@ -7,9 +7,11 @@ Apache License 2.0. Upstream attribution and terms remain applicable.
 
 ## CrisperWhisper2
 
-CrisperWhisper2 is a frozen external evaluation baseline only. Its weights,
-adapters, and per-example generated outputs are not included. Aggregate scores
-are retained to document the comparison reported in the paper.
+CrisperWhisper2 is used as a frozen external evaluation baseline and as the
+initialization for an ancillary LoRA adaptation. Its weights, adapted weights,
+and per-example generated outputs are not included. Configuration, original
+training code, and aggregate scores are retained to document the comparison
+reported in the paper. Upstream terms remain applicable.
 
 ## Token-loop repair
 
@@ -21,5 +23,5 @@ decoder loops, not ordinary conversational repetitions.
 
 ## Corpora
 
-La Trobe and SBCSAE material is not redistributed. See
+La Trobe, SBCSAE, and GCSAusE material is not redistributed. See
 `docs/DATA_AND_LICENSES.md` for the separate source-corpus terms.

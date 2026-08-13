@@ -48,6 +48,18 @@ def policy_prefix(tokenizer, policy: str) -> list[int]:
     return prefix[:index] + [token_id] + prefix[index:]
 
 
+def crisper_verbatim_prefix(tokenizer) -> list[int]:
+    """Return CrisperWhisper2's five policy tokens plus Whisper's prefix."""
+    mode_text = "".join(f"[verbatim_{index}]" for index in range(1, 6))
+    mode_tokens = tokenizer.encode(mode_text, add_special_tokens=False)
+    if len(mode_tokens) != 5:
+        raise ValueError(
+            "CrisperWhisper verbatim tags are not five atomic tokens: "
+            f"{mode_tokens}"
+        )
+    return mode_tokens + list(tokenizer.prefix_tokens)
+
+
 def batches(items: list[dict], size: int):
     for index in range(0, len(items), size):
         yield items[index : index + size]
@@ -122,9 +134,12 @@ def main() -> None:
     parser.add_argument("--base-model", default="openai/whisper-large-v3")
     parser.add_argument("--adapter", type=Path)
     parser.add_argument("--dual-policy", action="store_true")
+    parser.add_argument("--crisper-verbatim", action="store_true")
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--batch-size", type=int, default=4)
     args = parser.parse_args()
+    if args.dual_policy and args.crisper_verbatim:
+        raise ValueError("choose either --dual-policy or --crisper-verbatim")
 
     all_rows = read_jsonl(args.manifest.resolve())
     source_rows = {}
@@ -157,13 +172,20 @@ def main() -> None:
     model.config.forced_decoder_ids = None
     model.generation_config.forced_decoder_ids = None
 
-    modes = ["verbatim", "intended"] if args.dual_policy else ["standard"]
+    if args.dual_policy:
+        modes = ["verbatim", "intended"]
+    elif args.crisper_verbatim:
+        modes = ["crisper_verbatim"]
+    else:
+        modes = ["standard"]
     predictions = {mode: [] for mode in modes}
     repair_metadata = {mode: [] for mode in modes}
     with torch.inference_mode():
         for mode in modes:
             if mode == "standard":
                 prefix = list(processor.tokenizer.prefix_tokens)
+            elif mode == "crisper_verbatim":
+                prefix = crisper_verbatim_prefix(processor.tokenizer)
             else:
                 prefix = policy_prefix(processor.tokenizer, mode)
             for group in batches(rows, args.batch_size):
@@ -193,6 +215,7 @@ def main() -> None:
         "examples": len(rows),
         "adapter": str(args.adapter) if args.adapter else None,
         "dual_policy": args.dual_policy,
+        "crisper_verbatim": args.crisper_verbatim,
         "generation": {
             "decoding": "greedy",
             "loop_repair": True,
