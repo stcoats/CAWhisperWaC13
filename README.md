@@ -37,6 +37,10 @@ paths, and restricted CrisperWhisper outputs.
 - `docs/`: corpus reconstruction, licensing, reproducibility, ancillary
   experiments, and the manuscript workflow figure.
 
+The La Trobe ASR-assisted segmentation procedure, exact-cut policy, and
+quality-tier definitions are documented in
+`docs/LATROBE_HF_DATASET_CARD.md`.
+
 ## Ancillary experiments
 
 The main CoANZSE comparison remains the four-system experiment reported in

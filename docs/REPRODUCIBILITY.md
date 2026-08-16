@@ -13,6 +13,27 @@
 - The held-out test and CoANZSE benchmark are never used for checkpoint
   selection.
 
+## La Trobe timing and segmentation
+
+The lexical-verbatim targets come from normalized human transcripts. ASR was
+used only to establish their approximate position in each complete recording.
+Faster-Whisper Large-v3 output was word-aligned with WhisperX, and runs of at
+least two exact normalized token matches between the human and ASR sequences
+served as timing anchors. Non-matching human tokens received monotonically
+interpolated positions. Candidate spans targeted 20 seconds, preferring human
+turn boundaries within a 10--30-second range. The final exact-boundary release
+removed all earlier checking/alignment margins and cut from the estimated start
+of the first target token through the estimated end of the last target token.
+
+The `quality_tier` field measures confidence in this text-to-timeline mapping,
+not subjective audio quality. Tier A required anchor coverage >= .65, local ASR
+similarity >= .70, and no overlap, uncertainty, or multiple-speaker flag. Tier
+B required anchor coverage >= .50, similarity >= .55, overlap affecting no
+more than 12% of tokens, and no uncertain material. The final primary release
+then excluded every example with any transcript-marked overlap. It contains
+208 tier-A and 30 tier-B La Trobe examples. Full definitions and the release
+data card are in `docs/LATROBE_HF_DATASET_CARD.md`.
+
 ## Full verbatim model
 
 The full model is initialized directly from Whisper Large-v3. Every parameter
