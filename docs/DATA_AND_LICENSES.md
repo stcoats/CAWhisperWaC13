@@ -4,11 +4,19 @@
 
 ### La Trobe conversational corpus
 
-The La Trobe material was obtained through LDaCA. Users must obtain their own
-authorized copy and comply with the terms displayed by the provider. Those
-terms restrict copying, adaptation, transmission, and redistribution. This
-repository therefore includes preparation code but no La Trobe recordings,
-transcripts, derived clips, or manifest text.
+The La Trobe Corpus of Spoken Australian English is distributed under the
+Creative Commons Attribution 4.0 International licence (CC BY 4.0). The
+processed training release is a derivative of that corpus: its transcripts
+were normalized, the recordings were segmented to acoustic boundaries and
+converted to mono 16-kHz PCM WAV, segments with substantial overlap were
+excluded from the primary training set, and examples were assigned to fixed
+training, validation, and test partitions. Redistribution and adaptation are
+permitted subject to attribution and identification of these changes. The
+original corpus creators, corpus record, and CC BY 4.0 licence must be cited.
+
+The anonymous code repository does not itself contain the source recordings or
+processed clips. The public processed dataset and its exact citation will be
+linked here when its Hugging Face release is available.
 
 ### Santa Barbara Corpus of Spoken American English
 
