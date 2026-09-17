@@ -1,12 +1,7 @@
-# Review anonymity
+# Camera-ready release note
 
-This branch is prepared for anonymous peer review. It must not be pushed to a
-repository whose owner or URL identifies the authors and must not contain
-commit author metadata traceable to them.
+This repository was originally prepared as an anonymous review artifact for the 13th Web as Corpus Workshop (WaC-13). Following paper acceptance, it has been de-anonymized for the camera-ready version of the paper:
 
-Before camera-ready release:
-
-1. replace this note with author and citation information;
-2. add the final paper citation and archival link;
-3. obtain explicit permission before releasing trained weights;
-4. retain the separation between code licensing and data/model licensing.
+**Keeping the Ums: Conversation-Analysis-Informed Verbatim ASR for Web Speech**  
+Steven Coats (University of Oulu)  
+*Proceedings of the 13th Web as Corpus Workshop (WaC-13)*, 2026.

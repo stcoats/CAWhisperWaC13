@@ -1,8 +1,10 @@
-# CA-Whisper: anonymous review artifact
+# Keeping the Ums: Conversation-Analysis-Informed Verbatim ASR for Web Speech
 
-This repository accompanies an anonymous workshop submission on
-conversation-analysis-informed verbatim ASR for Australian and New Zealand
-web speech.
+This repository contains code, evaluation manifests, predictions, and scoring scripts for the paper:
+
+> **Keeping the Ums: Conversation-Analysis-Informed Verbatim ASR for Web Speech**  
+> Steven Coats  
+> *Proceedings of the 13th Web as Corpus Workshop (WaC-13)*, 2026.
 
 The experiments adapt `openai/whisper-large-v3` using carefully segmented
 conversational speech. The principal systems are:
@@ -97,5 +99,17 @@ The MIT license covers repository code only. It does not grant rights in the
 training corpora, web audio, reference transcripts, external models, or model
 outputs. See `docs/DATA_AND_LICENSES.md` before redistributing data or weights.
 
-This review repository intentionally contains no author names, affiliations,
-personal contact details, institutional project numbers, or identifying URLs.
+## Citation
+
+```bibtex
+@inproceedings{coats2026keeping,
+  title={Keeping the Ums: Conversation-Analysis-Informed Verbatim {ASR} for Web Speech},
+  author={Coats, Steven},
+  booktitle={Proceedings of the 13th Web as Corpus Workshop (WaC-13)},
+  year={2026}
+}
+```
+
+## Acknowledgments
+
+This work was supported by the European Union NextGenerationEU instrument and was funded by the Research Council of Finland under grant number 358720. Computational resources were provided by Finland's Centre for Scientific Computing (CSC).

@@ -14,7 +14,7 @@ training, validation, and test partitions. Redistribution and adaptation are
 permitted subject to attribution and identification of these changes. The
 original corpus creators, corpus record, and CC BY 4.0 licence must be cited.
 
-The anonymous code repository does not itself contain the source recordings or
+This code repository does not itself contain the source recordings or
 processed clips. The public processed dataset and its exact citation will be
 linked here when its Hugging Face release is available.
 
@@ -26,7 +26,7 @@ recordings, transcripts, transformed targets, or derived clips.
 
 Because the interaction between source-corpus terms and redistributed trained
 weights is not completely clear, no full-model checkpoint or LoRA adapter is
-included in this anonymous artifact. Permission should be obtained from the
+included in this repository. Permission should be obtained from the
 corpus rights holders before a public model release.
 
 ### Griffith Corpus of Spoken Australian English (GCSAusE)
